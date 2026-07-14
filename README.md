@@ -15,6 +15,7 @@ Terraform for Halden Freight Analytics' AWS production environment (eu-central-1
 | `exports.tf` | Report-exports bucket served to customers, 30-day expiry |
 | `database.tf` | Shipments Postgres (RDS, encrypted, private) |
 | `security_groups.tf` | App and DB security groups |
+| `bastion.tf` | SSH jump host for on-call DB access |
 
 State lives in `s3://halden-terraform-state` with DynamoDB locking.
 
